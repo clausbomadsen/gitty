@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "gitty"
+version = "0.1.0"
+description = "GIT workflow tool"
+authors = ["Claus Bo Madsen"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "^8.1.7"
+pytest = "^8.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+gitty = "gitty.gitty:gitty"
